@@ -1,5 +1,5 @@
-# ~/.config/zsh/plugins/gsh.zsh
-GSH_CACHE="$HOME/.cache/gsh_cache.txt"
+# ~/.config/zsh/plugins/shellgpt.zsh
+GSH_CACHE="$HOME/.cache/shellgpt_cache.txt"
 
 function shellgpt() {
     local query="$*"
@@ -82,6 +82,3 @@ function shellgpt() {
         echo "\n📋 No clipboard tool available. You'll need to copy the command manually."
     fi
 }
-
-# Create an alias for the original name
-alias gsh="shellgpt"
