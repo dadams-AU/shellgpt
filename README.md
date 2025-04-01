@@ -1,6 +1,6 @@
-# 🧠 gsh — Shell-GPT Command Helper for Zsh
+# 🧠 shellgpt — Shell-GPT Command Helper for Zsh
 
-`gsh` is a minimalist Zsh function that uses OpenAI’s GPT API to suggest shell commands for your tasks. It gives you 3 ready-to-use commands, lets you pick the one you want, and copies it to your clipboard. Great for terminal workflows, scripting inspiration, or just avoiding Stack Overflow rabbit holes.
+`shellghpt` is a minimalist Zsh function that uses OpenAI’s GPT API to suggest shell commands for your tasks. It gives you 3 ready-to-use commands, lets you pick the one you want, and copies it to your clipboard. Great for terminal workflows, scripting inspiration, or just avoiding Stack Overflow rabbit holes.
 
 ---
 
@@ -21,14 +21,13 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/dadams-AU/gsh-shellgpt ~/.config/zsh/plugins/gsh
+git clone https://github.com/dadams-AU/shellgpt ~/.config/zsh/plugins/shellgpt
 ```
 
 ### 2. Source it in your `.zshrc`
 
 ```zsh
-source ~/.config/zsh/plugins/gsh/gsh.zsh
-alias gsh="shellgpt"
+source ~/.config/zsh/plugins/gsh/shellgpt.zsh
 ```
 
 Then reload your shell:
@@ -55,7 +54,7 @@ To set it permanently, add that line to your `~/.zshenv`, `~/.zprofile`, or `~/.
 Just type a natural-language request:
 
 ```bash
-gsh find all .bib files in my home directory without sudo
+shellgpt find all .bib files in my home directory without sudo
 ```
 
 You’ll get:
@@ -99,12 +98,12 @@ On macOS, replace `xclip` logic with `pbcopy`.
 
 ## 🧩 Integrate with a Plugin Manager
 
-If you’re using a Zsh plugin manager like [zinit](https://github.com/zdharma-continuum/zinit) or [antidote](https://getantidote.github.io/), you can load `gsh.zsh` directly.
+If you’re using a Zsh plugin manager like [zinit](https://github.com/zdharma-continuum/zinit) or [antidote](https://getantidote.github.io/), you can load `shellgpt.zsh` directly.
 
 Example (zinit):
 
 ```zsh
-zinit light YOUR_USERNAME/gsh-shellgpt
+zinit light dadams-AU/shellgpt
 ```
 
 ---
@@ -114,7 +113,7 @@ zinit light YOUR_USERNAME/gsh-shellgpt
 Just remove the `source` line and alias from `.zshrc`, then delete the plugin directory:
 
 ```bash
-rm -rf ~/.config/zsh/plugins/gsh
+rm -rf ~/.config/zsh/plugins/shellgpt
 ```
 
 ---
