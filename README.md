@@ -21,7 +21,7 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gsh-shellgpt ~/.config/zsh/plugins/gsh
+git clone https://github.com/dadams-AU/gsh-shellgpt ~/.config/zsh/plugins/gsh
 ```
 
 ### 2. Source it in your `.zshrc`
