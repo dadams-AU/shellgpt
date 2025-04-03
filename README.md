@@ -27,7 +27,8 @@ git clone https://github.com/dadams-AU/shellgpt ~/.config/zsh/plugins/shellgpt
 ### 2. Source it in your `.zshrc`
 
 ```zsh
-source ~/.config/zsh/plugins/gsh/shellgpt.zsh
+source ~/.config/zsh/plugins/shellgpt/shellgpt.zsh
+alias gsh="shellgpt"
 ```
 
 Then reload your shell:
