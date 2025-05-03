@@ -97,12 +97,12 @@ function shellgpt() {
         return 1
     fi
     
-    # Extract command from the line (improved extraction)
+    # Extract command from the line - FIXED METHOD
     local command=$(echo "$line" | grep -o '`[^`]*`' | head -1 | sed 's/^`//;s/`$//')
     
-    # Alternative extraction if backticks not found
+    # If no command found in backticks, look for it in code blocks
     if [[ -z "$command" ]]; then
-        command=$(echo "$line" | sed -E 's/^[0-9]+\.[ ]*//; s/ *:.*$//')
+        command=$(echo "$content" | grep -E -A 2 "^$selection\." | grep -E '^```' -A 1 | grep -v '^```' | sed 's/^[ ]*//;s/[ ]*$//' | head -1)
     fi
     
     # Final validation
